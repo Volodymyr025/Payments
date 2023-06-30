@@ -1,0 +1,79 @@
+
+form{
+    display: grid;
+    grid-template: 3rem/5rem 15rem 8rem 25rem 8rem;
+    justify-content: space-around;
+    margin: 3rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input,select{
+    font-size: 20px;
+    padding-left: 7px;
+    border-radius: 8px;
+    border: solid 1px;
+}
+#notary{
+    margin: 1rem auto;
+    display: grid;
+    padding: 1rem;
+}
+#btn-add{
+    font-size: 20px;
+    background-color: #03e703;
+    border: none;
+    border-radius: 15px;
+    width: 8rem;
+    height: 3rem;
+}
+
+#btn-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn {
+    background-color: #1CB0F6;
+    cursor: pointer;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 5px 5px 10px 2px #373737;
+}
+#btn:not(:active):hover{
+    transition-property: background-color;
+    background-color: #1c43f6;
+    transition-duration: 0.5s;
+}
+#btn:active{
+    position: relative;
+    bottom: -3px;
+    right: -3px;
+    box-shadow: 5px 5px 10px 2px rgb(4, 218, 4);
+}
+
+#table{
+    font-size: 28px;
+    margin: 1rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+table{
+    background-color: black;
+}
+tr{
+    background-color: white;
+}
+td, th{
+    padding: 5px;
+}
+

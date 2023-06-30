@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="app.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платежі RwS</title>
+</head>
+<script src="app.js" defer></script>
+<script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+<body>
+    <select id="notary">
+        <option label="Виберіть нотаріуса" disabled selected ></option>
+        <option label="Нотаріус 1" value="Нотаріус 1"></option>
+        <option label="Нотаріус 2" value="Нотаріус 2"></option>
+        <option label="Нотаріус 3" value="Нотаріус 3"></option>
+    </select>
+   <form action="input">
+    <input type="number" id="sum" required placeholder="Сума">
+    <input type="text" id="username" required placeholder="ПІБ">
+    <input type="number" id="ipn" required placeholder="ІПН">
+    <select>
+        <option label="Призначення" disabled selected></option>
+    </select>
+    <div><button id="btn-add">Додати</button></div>
+   </form>
+   
+   <div id="btn-body">
+    <button id="btn">Скачати</button>
+</div>
+    <div id="table">
+        <table  id="tblToExcl">
+            <tbody class="post">
+            <tr>
+                <th>Сума</th>
+                <th>ПІБ</th>
+                <th>ІПН</th>
+                <th> </th>
+                <th>Призначення</th>
+                <th>МФО Банку</th>
+                <th>Рахунок</th>
+                <th>Отримувач (Банк)</th>
+                <th>ЗКПО отримувача</th>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
